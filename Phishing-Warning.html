@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security Warning</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #ff3333;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      border: 3px solid #ff0000;
+      box-shadow: 0 0 40px #ff0000;
+      border-radius: 10px;
+      animation: glow 1.5s infinite alternate;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .emoji {
+      font-size: 4rem;
+      margin: 10px 0;
+      animation: shake 0.8s infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .blink {
+      animation: blink 0.7s infinite;
+      font-weight: bold;
+      color: #ffff33;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #ff0000; }
+      to   { box-shadow: 0 0 40px #ff0000; }
+    }
+
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes shake {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-2px, 2px); }
+      50% { transform: translate(2px, -2px); }
+      75% { transform: translate(-2px, -2px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    .small-note {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">⚠️💀🚨</div>
+    <h1>YOU HAVE BEEN HACKED!</h1>
+    <p class="blink">⚠️ Your account and device may be compromised ⚠️</p>
+    <p>
+      This is what can happen when you click on a suspicious link in a phishing email.<br>
+      Never trust unexpected messages, attachments, or urgent security alerts.
+    </p>
+    <p>
+      🔍 Always check the sender, links, and email headers before you click.<br>
+      🛡️ Report suspicious emails to your security team immediately.
+    </p>
+    <div class="emoji">😱😱😱</div>
+
+    <p class="small-note">
+      (Don’t worry – this page is a <strong>training simulation</strong>, not a real hack.)
+    </p>
+  </div>
+</body>
+</html>
